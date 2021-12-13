@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+nav {
+  background-color: rgb(250, 252, 255);
+  display: flex;
+  height: 70px;
+  border-bottom: solid 2px rgb(182, 216, 111);
+}
+nav .logo-div {
+  /* border: solid; */
+  margin: auto auto auto 20px;
+}
+nav .link-div {
+  /* border: solid; */
+  margin: auto 20px;
+}
+
+nav .link-div ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav .link-div ul li .btn {
+  background-color: rgb(8, 56, 109);
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 10px;
+}
+nav .link-div ul li a {
+  padding: 8px;
+  margin: auto 0;
+  text-decoration: none;
+}
+
+.hero-div {
+  /* border: solid; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.hero-div .text-div {
+  /* border: solid; */
+  width: 38%;
+  min-width: 300px;
+  font-size: 14px;
+  padding: 10px 20px;
+  color: rgb(8, 56, 109);
+  line-height: 24px;
+}
+.hero-div .text-div .partiner {
+  font-weight: 800;
+}
+.hero-div .text-div .img-container {
+  display: flex;
+}
+.hero-div .text-div .img-container .img-div img {
+  margin: 0;
+}
+.hero-div .text-div h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(8, 56, 109);
+  line-height: 1;
+}
+.hero-div .text-div a {
+  text-decoration: none;
+  padding: 16px 30px;
+  background-color: rgb(8, 56, 109);
+  color: #ddd;
+  display: inline-block;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.hero-div .text-div h2 span {
+  color: rgb(182, 216, 111);
+}
+.hero-div .img-div {
+  /* border: solid; */
+  width: 45%;
+  display: flex;
+}
+.hero-div .img-div img {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(250, 252, 255);
+  border-top: 2px solid rgb(182, 216, 111);
+  padding: 30px 0;
+}
+footer img {
+  margin: 0 0 20px 0;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  /* border: solid; */
+  margin: 30px 0px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+footer .footer-btn {
+  text-decoration: none;
+  padding: 16px 30px;
+  background-color: rgb(8, 56, 109);
+  color: rgb(221 221 221);
+  display: inline-block;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+footer .icon-div ul {
+  display: flex;
+}
+footer .icon-div ul li {
+  margin: 0 10px;
+}
+footer .icon-div ul li i {
+  font-size: 20px;
+  color: rgb(8, 56, 109);
+}
