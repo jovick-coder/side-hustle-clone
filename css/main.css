@@ -3,19 +3,51 @@ body {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.space-around {
+  justify-content: space-around;
+}
+.space-between {
+  justify-content: space-between;
+}
 nav {
   background-color: rgb(250, 252, 255);
   display: flex;
-  height: 70px;
+  min-height: 70px;
   border-bottom: solid 2px rgb(182, 216, 111);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.scrow-nav {
+  background-color: rgb(8, 56, 109);
+  color: rgb(255, 255, 255);
+  z-index: 30;
+}
+.scrow-nav a {
+  background-color: rgb(8, 56, 109);
+}
+.scrow-nav .link-div ul li a {
+  color: rgb(255, 255, 255);
+}
+.scrow-nav .link-div ul li .btn {
+  border: solid rgb(182, 216, 111);
 }
 nav .logo-div {
   /* border: solid; */
-  margin: auto auto auto 20px;
+  margin: auto auto auto 10%;
 }
 nav .link-div {
   /* border: solid; */
-  margin: auto 20px;
+  margin: auto 10%;
+}
+@media (max-width: 576px) {
+  nav .link-div {
+    display: none;
+  }
 }
 
 nav .link-div ul {
@@ -26,14 +58,21 @@ nav .link-div ul {
 }
 nav .link-div ul li .btn {
   background-color: rgb(8, 56, 109);
-  padding: 20px 30px;
+  padding: 16px 40px;
   color: #fff;
   border-radius: 10px;
+  margin: 10px 0;
+}
+nav .link-div ul li {
+  /* border: solid red; */
+  display: flex;
 }
 nav .link-div ul li a {
   padding: 8px;
-  margin: auto 0;
+  margin: auto;
   text-decoration: none;
+  color: #000;
+  /* border: solid; */
 }
 
 .hero-div {
@@ -45,15 +84,21 @@ nav .link-div ul li a {
 }
 .hero-div .text-div {
   /* border: solid; */
-  width: 38%;
+  width: 40%;
   min-width: 300px;
   font-size: 14px;
-  padding: 10px 20px;
+  padding: 10px 0px;
   color: rgb(8, 56, 109);
   line-height: 24px;
+  /* margin-left: 50px; */
 }
 .hero-div .text-div .partiner {
-  font-weight: 800;
+  font-weight: 700;
+  font-style: normal;
+  margin: 45px 0;
+  font-size: 20px;
+  color: rgb(52 52 52 / 70%);
+  line-height: 22.6px;
 }
 .hero-div .text-div .img-container {
   display: flex;
@@ -61,35 +106,78 @@ nav .link-div ul li a {
 .hero-div .text-div .img-container .img-div img {
   margin: 0;
 }
-.hero-div .text-div h2 {
+.heading-1 {
   font-size: 50px;
   font-weight: 700;
   color: rgb(8, 56, 109);
-  line-height: 1;
+  /* line-height: 1; */
+  line-height: 113.9%;
+}
+.text-div {
+  font-size: 14px;
 }
 .hero-div .text-div a {
   text-decoration: none;
-  padding: 16px 30px;
+  padding: 16px 40px;
   background-color: rgb(8, 56, 109);
   color: #ddd;
   display: inline-block;
   margin: 20px 0;
   border-radius: 5px;
+  /* border: solid; */
 }
-.hero-div .text-div h2 span {
-  color: rgb(182, 216, 111);
+.heading-1 span {
+  color: rgb(82, 163, 80);
 }
 .hero-div .img-div {
   /* border: solid; */
-  width: 45%;
+  width: 50%;
   display: flex;
 }
 .hero-div .img-div img {
   width: 80%;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 130px;
+}
+.benefit-section {
+  background-color: rgb(250, 252, 255);
+  margin-top: 48px;
+  padding: 48px 0;
+}
+.benefit-section .text-div {
+  text-align: center;
+  font-size: 14px;
+  color: rgb(8, 56, 109);
+}
+.benefit-section .text-div h2 {
+  margin: 10px;
 }
 
+.benefit-section .icon-div {
+  color: #000;
+  /* border: solid; */
+  padding: 16px;
+  background: rgb(182, 216, 111);
+  border-radius: 5px;
+  height: 70px;
+  margin: 10px;
+}
+
+.benefit-section .text p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.benefit-section .g-box {
+  width: 350px;
+  /* border: solid; */
+}
+.benefit-section .text h4 {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 10px 0;
+  /* border: solid; */
+  margin-bottom: 0;
+}
 footer {
   display: flex;
   flex-wrap: wrap;

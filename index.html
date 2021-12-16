@@ -8,74 +8,608 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat"
+      href="https://fonts.googleapis.com/css2?&family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
     />
+
+    <!-- BS 5 -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/main.css" />
-    <title>Document</title>
+    <title>Home</title>
   </head>
   <body>
-    <nav>
+    <nav id="nav">
       <div class="logo-div">
-        <img src="img/logo-dark.64d45129.png" alt="" width="130" />
+        <img src="img/logo-dark.64d45129.png" alt="" width="150" />
       </div>
-      <div class="link-div">
+      <div class="link-div m x-auto">
         <ul>
           <li><a href="#">Courses</a></li>
           <li><a href="#">FAQ</a></li>
           <li><a href="#">Login</a></li>
-          <li><a href="#" class="btn">Apply Now</a></li>
+          <li><a href="#" class="btn m -2">Apply Now</a></li>
         </ul>
       </div>
     </nav>
 
-    <section>
-      <div class="hero-div">
-        <div class="text-div">
-          <h2>Building <span>Africa's</span> Workforce.</h2>
-          Join the remote Side Hustle internship for free to learn high-demand
-          skills that will give you a competitive advantage in the global
-          workforce. You will also have a lot of fun networking taking on tasks,
-          earning stipends, winning prizes, and ultimately becoming part of a
-          startup where your skills are put to use.
-          <br />
-          <a href="#"> Become an intern </a>
-          <div class="partiner">Our Partners</div>
-          <div class="img-container">
-            <div class="img-div">
-              <img src="img/jobberman.09c1713a.png" alt="" />
-            </div>
-            <div class="img-div">
-              <img src="img/mintbank.2dfd5c9d.png" alt="" />
-            </div>
+    <section class="mt-5" style="margin-top: 200px;">
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            dd
+          </div>
+          <div class="col-12 col-lg-6">
+            jj
           </div>
         </div>
-        <div class="img-div">
-          <img src="img/hi.2a54e20e.png" alt="" />
+      </div> -->
+      <div class="container py-lg-5">
+        <div
+          class="row px-3 px-lg-2 pt-50 d-flex justify-content-between"
+          id="hero-row"
+        >
+          <div class="col-12 col-lg-6">
+            <h2 class="heading-1 mb-4 mt-5 mt-md-0">
+              Building
+              <span style="color: rgb(82, 163, 80);">Africa's</span>
+              Workforce.
+            </h2>
+            <p class="mb-4 sh-text-primary">
+              Join the remote Side Hustle internship for free to learn
+              high-demand skills that will give you a competitive advantage in
+              the global workforce.
+              <br />
+              You will also have a lot of fun networking taking on tasks,
+              earning stipends, winning prizes, and ultimately becoming part of
+              a startup where your skills are put to use.
+            </p>
+            <a
+              href="#"
+              class="btn btn-primary py-2 px-4"
+              style="
+                box-shadow: rgba(8, 56, 109, 0.25) 0px 5px 10px;
+                color: rgb(255, 255, 255);
+                background-color: rgb(8, 56, 109);
+              "
+            >
+              Become an Intern
+            </a>
+          </div>
+          <div class="col-12 col-lg-6 m-auto hero-section-image-holder">
+            <img
+              class="img-fluid hero-section-image"
+              src="/img/hi.2a54e20e.png"
+              alt="landing page image"
+              style="margin-top: 50px; width: 400px;"
+            />
+          </div>
+        </div>
+        <div class="container-fluid px-0 py-5 mt-4 d-none d-md-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <h4
+                  class="heading-1"
+                  style="color: rgba(52, 52, 52, 0.7); font-size: 20px;"
+                >
+                  Our Partners
+                </h4>
+              </div>
+              <div class="col-12 d-flex justify-content-start px-0">
+                <img
+                  src="/img/jobberman.09c1713a.png"
+                  alt="logo"
+                  class="partner-logo"
+                  style="width: 130px; height: 90px;"
+                />
+                <img
+                  src="/img/mintbank.2dfd5c9d.png"
+                  alt="logo"
+                  class="partner-logo"
+                  style="width: 130px; height: 90px;"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <section class="benefit-section">
+      <div class="text-div">
+        <h2 class="heading-1">
+          What you stand to
+          <span>benefit</span>
+        </h2>
+        Some of the benefits of being a participant of the Side Hustle
+        internship include:
+      </div>
+
+      <div class="container">
+        <div class="row" style="justify-content: space-around;">
+          <div class="col-md-5 py-4">
+            <div class="row mt-5">
+              <!--  -->
+              <div class="d-flex m-md-5 g-box">
+                <div class="icon-div">
+                  <img src="img/download.png" alt="" />
+                </div>
+                <div class="text">
+                  <h4>Earn 3 certificates</h4>
+                  <p>
+                    One from Side Hustle, One from Jobberman, One from Udemy.
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+              <!--  -->
+              <div class="d-flex m-md-5 g-box">
+                <div class="icon-div">
+                  <img src="img/download.png" alt="" />
+                </div>
+                <div class="text">
+                  <h4>Learn from the very best for free</h4>
+                  <p>
+                    All mentors of the Side Hustle internship have received one
+                    form of training or the other and are all professionals in
+                    their fields.
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+              <!--  -->
+              <div class="d-flex m-md-5 g-box">
+                <div class="icon-div">
+                  <img src="img/download.png" alt="" />
+                </div>
+                <div class="text">
+                  <h4>Get a Jobberman soft skills scholarship</h4>
+                  <p>
+                    You’ll also have free access to the Jobberman soft skills
+                    scholarship, which gives you high priority when you apply
+                    for jobs on the platform.
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+          <div class="col-md-5 py-4">
+            <div class="row">
+              <!--  -->
+              <div class="d-flex m-md-5 g-box">
+                <div class="icon-div">
+                  <img src="img/download.png" alt="" />
+                </div>
+                <div class="text">
+                  <h4>Network with like minds</h4>
+                  <p>
+                    During this internship, you will be tasked with joining
+                    teams, which gives you unlimited access to forming strong
+                    networks with like minds.
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+              <!--  -->
+              <div class="d-flex m-md-5 g-box">
+                <div class="icon-div">
+                  <img src="img/download.png" alt="" />
+                </div>
+                <div class="text">
+                  <h4>Be a part of a fast-growing startup</h4>
+                  <p>
+                    As an intern, you stand a chance to become a part of the
+                    Side Hustle team or any other fast paced start up after your
+                    training.
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+              <!--  -->
+              <div class="d-flex m-md-5 g-box">
+                <div class="icon-div">
+                  <img src="img/download.png" alt="" />
+                </div>
+                <div class="text">
+                  <h4>Earn perfomance-based stipends</h4>
+                  <p>
+                    During this internship, high performing interns from all
+                    tracks will earn stipends and perks based on their
+                    performance in tasks given.
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a
+            href="#"
+            class="btn btn-primary py-2 px-4"
+            style="
+              box-shadow: rgba(8, 56, 109, 0.25) 0px 5px 10px;
+              color: rgb(255, 255, 255);
+              background-color: rgb(8, 56, 109);
+            "
+          >
+            Become an Intern
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="text-div text-center">
+        <h2 class="heading-1">
+          What others have
+          <span>gained</span>
+        </h2>
+        Read all about how the Side Hustle internship has impacted other youths
+        and helped
+        <br />
+        them achieve their goals.
+      </div>
+      <style>
+        .c div {
+          border: solid 1px;
+          /* margin: 20px; */
+        }
+        .testimony-text {
+          font-size: 18px;
+          width: 80%;
+          margin: 0 20px;
+        }
+        .testimony .row {
+          --bs-gutter-x: 0;
+        }
+        @media screen and (max-width: 767px) {
+          .testimony-text {
+            font-size: 14px;
+            /* color: red !important; */
+            text-align: center;
+            /* border: solid; */
+            width: 90%;
+            border-bottom: solid 1px rgb(8 56 109 / 20%);
+            /* max-width: 400px; */
+            margin: 10px auto;
+            /* margin: 30px; */
+          }
+        }
+
+        .name-div {
+          /* border: solid; */
+          width: 250px;
+          margin: auto;
+        }
+        .name-div .name span {
+          font-size: 14px;
+          color: rgb(8, 56, 109);
+          font-weight: 700;
+        }
+        .name-div .name small {
+          font-size: 12.8px;
+        }
+      </style>
+
+      <div class="container testimony m- 5 c">
+        <!--  -->
+        <div class="row d-flex justify-content-between mt-5">
+          <div class="col-12 col-md-4">
+            <!-- image -->
+            <div
+              class="col- 12 d-flex"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <img
+                class="img-fluid m-auto"
+                alt="Side Hustle Testimonies"
+                style="width: 150px;"
+                src="https://sidehustle.ng/api/assets/img/testimonies/emerole_justice.png"
+              />
+            </div>
+            <!-- name -->
+            <div class="d-flex flex-row-reverse space-around mt-3 name-div">
+              <div class="name">
+                <span class="font-weight-bold">
+                  Emerole Justice
+                </span>
+                <br />
+                <small>Side Hustle internship 3.0</small>
+              </div>
+              <div class="icon">
+                <img src="img/bolb.png" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8">
+            <p class="testimony-text pb-0">
+              The internship has been fantastic, with extensive explanations on
+              every step required to maintain your customers for loyalty. You
+              should consider yourself fortunate to be a part of this program. I
+              strongly advise you not to pass up this fantastic chance. And to
+              Side Hustle, I want to express my gratitude for providing me with
+              this incredible opportunity to expand my knowledge.
+            </p>
+            <div class="d-none d-md-block">
+              <!-- line image -->
+              <img src="img/r.png" class="img-fluid" />
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="row d-flex flex-row-reverse justify-content-between mt-5">
+          <div class="col-12 m-auto col-md-4">
+            <!-- image -->
+            <div
+              class="col- 12 d-flex"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <img
+                class="img-fluid m-auto"
+                alt="Side Hustle Testimonies"
+                style="width: 150px;"
+                src="https://sidehustle.ng/api/assets/img/testimonies/emerole_justice.png"
+              />
+            </div>
+            <!-- name -->
+            <div class="d-flex flex-row-reverse space-around mt-3 name-div">
+              <div class="name">
+                <span class="font-weight-bold">
+                  Emerole Justice
+                </span>
+                <br />
+                <small>Side Hustle internship 3.0</small>
+              </div>
+              <div class="icon">
+                <img src="img/bolb.png" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8">
+            <p class="testimony-text pb-0">
+              The internship has been fantastic, with extensive explanations on
+              every step required to maintain your customers for loyalty. You
+              should consider yourself fortunate to be a part of this program. I
+              strongly advise you not to pass up this fantastic chance. And to
+              Side Hustle, I want to express my gratitude for providing me with
+              this incredible opportunity to expand my knowledge.
+            </p>
+            <div class="d-none d-md-block">
+              <!-- line image -->
+              <img src="img/r.png" class="img-fluid" />
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+        <!--  -->
+      </div>
+    </section>
+
+    <section>
+      <style>
+        .text-on-image-div {
+          position: relative;
+          border: solid;
+        }
+        .text-on-image {
+          position: absolute;
+          margin: auto;
+          top: 25%;
+          left: 10%;
+        }
+        .text-on-image h1 {
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 57.6px;
+          color: #fff;
+          margin: 20px 0;
+        }
+        .text-on-image small {
+          font-size: 14px;
+          color: #fff;
+          padding-top: 30px;
+          display: block;
+        }
+        .text-on-image small span {
+          font-size: 14px;
+          font-weight: 700;
+        }
+        @media screen and (max-width: 767px) {
+          .heading-1 {
+            font-size: 30px !important;
+          }
+          .text-on-image-div {
+            position: static;
+            background-color: rgb(8, 56, 109);
+            border: solid;
+            height: 289px;
+            text-align: center;
+            width: 100% !important;
+            margin: 0;
+            /* min-width: 300px; */
+          }
+          .text-on-image {
+            position: static;
+          }
+
+          .text-on-image h1 {
+            font-size: 30px;
+          }
+        }
+      </style>
+      <div class="conta in er m-5">
+        <div class="d-flex text-on-image-div">
+          <img
+            src="img/JN.715e18d2.svg"
+            width="900"
+            class="m-auto w-100 d-none d-md-block"
+            alt=""
+          />
+          <div class="text-on-image">
+            <h1>Join The Next Cohort</h1>
+            <a
+              href="#"
+              class="btn btn-primary"
+              style="
+                background-color: rgb(255, 255, 255);
+                color: rgb(8, 56, 109);
+                border: none;
+                padding: 16px 40px;
+                font-size: 14px;
+              "
+            >
+              Become an intern
+            </a>
+            <small>
+              The Internship starts on
+              <span>25th October</span>
+            </small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <style>
+        .chart {
+          /* position: absolute; */
+          top: -30px !important;
+          left: 80px !important;
+          right: 0;
+        }
+      </style>
+      <div class="col-12 p-0 pt-5" data-v-c5c507e4="">
+        <div class="row px-0 text-center" data-v-c5c507e4="">
+          <div
+            class="intern col-10 m-auto col-md-2 col-lg-3 pt-lg-5"
+            data-v-c5c507e4=""
+          >
+            <span class="d-block mb-2 pl-lg-2" data-v-c5c507e4="">
+              <span
+                class="font-weight-bold count"
+                data-v-c5c507e4=""
+                style="font-size: 40px;"
+              >
+                4010
+              </span>
+              INTERNS
+            </span>
+            <small class="d-block font-weight-bold px-5" data-v-c5c507e4="">
+              1ST COHORT
+            </small>
+          </div>
+          <div
+            class="intern col-10 m-auto col-md-2 col-lg-3 pt-5 text-center"
+            data-v-c5c507e4=""
+          >
+            <span class="d-block mb-2" data-v-c5c507e4="">
+              <span
+                class="font-weight-bold count"
+                data-v-c5c507e4=""
+                style="font-size: 40px;"
+              >
+                24850
+              </span>
+              INTERNS
+            </span>
+            <small class="d-block font-weight-bold px-5" data-v-c5c507e4="">
+              2ND COHORT
+            </small>
+          </div>
+          <div
+            class="intern col-10 m-auto col-md-2 col-lg-3 pt-5 text-center"
+            data-v-c5c507e4=""
+          >
+            <span class="d-block mb-2" data-v-c5c507e4="">
+              <span
+                class="font-weight-bold count"
+                data-v-c5c507e4=""
+                style="font-size: 40px;"
+              >
+                56053
+              </span>
+              INTERNS
+            </span>
+            <small class="d-block font-weight-bold px-5" data-v-c5c507e4="">
+              3RD COHORT
+            </small>
+          </div>
+          <div
+            class="intern col-10 m-auto col-md-2 col-lg-3"
+            data-v-c5c507e4=""
+          >
+            <div class="chart-holder" data-v-c5c507e4="">
+              <img
+                src="https://internship.sidehustle.ng/img/chart.ffdcec8d.svg"
+                class="chart col-12 mb-3 float-right"
+                alt="chart"
+                data-v-c5c507e4=""
+              />
+              <div class="chart-text" data-v-c5c507e4="">
+                <span class="d-block text-center" data-v-c5c507e4="">
+                  <span class="mb-2" data-v-c5c507e4="">OVER</span>
+                  <span
+                    class="d-block font-weight-bold mt-4"
+                    data-v-c5c507e4=""
+                    style="font-size: 50px;"
+                  >
+                    90%
+                  </span>
+                </span>
+              </div>
+              <p
+                class="px-lg-4 col-12 col-lg-9 mt-5 mt-md-3 chart-text2"
+                data-v-c5c507e4=""
+              >
+                Over 90% of interns are now engaged by different start-ups
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="footer-section">
       <footer>
         <div>
-          <img src="img/logo-dark.64d45129.png" width="150" alt="" /> <br />
+          <img src="img/logo-dark.64d45129.png" width="150" alt="" />
+          <br />
           <b>Get in Touch</b>
 
           <ul>
             <li>
               <a href="#">
-                <i class="fab fa-whatsapp"></i> Chat with us on Whatsapp
+                <i class="fab fa-whatsapp"></i>
+                Chat with us on Whatsapp
               </a>
             </li>
             <li>
-              <a href="#"
-                ><i class="fab fa-telegram"></i> Chat with us on Telegram</a
-              >
+              <a href="#">
+                <i class="fab fa-telegram"></i>
+                Chat with us on Telegram
+              </a>
             </li>
             <li>
               <a href="#">hello@sidehustle.ng</a>
@@ -116,5 +650,24 @@
         </div>
       </footer>
     </section>
+
+    <script>
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+      // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+      window.onscroll = function () {
+        scrollFunction()
+      }
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById('nav').classList.add('scrow-nav')
+        } else {
+          document.getElementById('nav').classList.remove('scrow-nav')
+        }
+      }
+    </script>
   </body>
 </html>
