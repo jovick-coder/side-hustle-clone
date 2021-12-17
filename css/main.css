@@ -179,12 +179,13 @@ nav .link-div ul li a {
   margin-bottom: 0;
 }
 footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: rgb(250, 252, 255);
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* justify-content: space-around; */
+  /* background-color: rgb(250, 252, 255); */
+  background-color: rgb(245, 250, 254);
   border-top: 2px solid rgb(182, 216, 111);
-  padding: 30px 0;
+  padding: 30px 50px;
 }
 footer img {
   margin: 0 0 20px 0;
@@ -199,9 +200,14 @@ footer ul li {
   margin: 30px 0px;
 }
 footer ul li a {
-  text-decoration: none;
+  /* text-decoration: none;
   color: black;
-  font-size: 14px;
+  font-size: 14px; */
+  color: rgb(0 0 0);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 footer .footer-btn {
@@ -222,4 +228,27 @@ footer .icon-div ul li {
 footer .icon-div ul li i {
   font-size: 20px;
   color: rgb(8, 56, 109);
+}
+footer .footer-buttom-text {
+  text-align: center;
+  color: rgb(0 0 0);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 13px;
+}
+.question-mark {
+  position: fixed;
+  bottom: 20%;
+  right: 20px;
+  /* border: solid; */
+}
+.question-mark a {
+  text-decoration: none;
+  color: rgb(182, 216, 111);
+  /* color: rgb(40, 167, 69); */
+}
+.question-mark a:hover {
+  /* text-decoration: none; */
+  /* color: rgb(40, 167, 69); */
+  color: rgb(40, 167, 69);
 }
