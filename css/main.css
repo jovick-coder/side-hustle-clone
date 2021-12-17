@@ -44,11 +44,6 @@ nav .link-div {
   /* border: solid; */
   margin: auto 10%;
 }
-@media (max-width: 576px) {
-  nav .link-div {
-    display: none;
-  }
-}
 
 nav .link-div ul {
   list-style: none;
@@ -73,6 +68,55 @@ nav .link-div ul li a {
   text-decoration: none;
   color: #000;
   /* border: solid; */
+}
+.menu-lable {
+  margin: auto 15px;
+  display: none;
+  font-size: 30px;
+  font-weight: 200;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+@media (max-width: 576px) {
+  .menu-lable {
+    display: block;
+  }
+  #check:checked ~ nav {
+    display: block;
+    transition: height ease-in-out 2s;
+  }
+  .logo-div {
+    margin: 18px 18px !important;
+  }
+  #check:checked ~ nav .logo-div {
+    margin: 18px 5px;
+  }
+  #check:checked ~ nav .link-div {
+    display: block;
+    /* border: solid; */
+    /* margin-left: 5px; */
+    /* width: 100%; */
+  }
+  #check:checked ~ nav .link-div ul {
+    display: block;
+    /* text-align: left; */
+    /* border: solid; */
+    /* margin-top: 30px; */
+  }
+  #check:checked ~ nav .link-div ul li .btn {
+    width: 100%;
+    margin: 20px auto;
+  }
+  #check:checked ~ nav .link-div ul li a {
+    /* display: block; */
+    /* border: solid green; */
+    margin: 0;
+    /* text-align: left; */
+  }
+  nav .link-div {
+    display: none;
+  }
 }
 
 .hero-div {
