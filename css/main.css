@@ -244,11 +244,8 @@ footer .footer-buttom-text {
 }
 .question-mark a {
   text-decoration: none;
-  color: rgb(182, 216, 111);
-  /* color: rgb(40, 167, 69); */
+  color: #52a350 !important;
 }
 .question-mark a:hover {
-  /* text-decoration: none; */
-  /* color: rgb(40, 167, 69); */
-  color: rgb(40, 167, 69);
+  color: rgb(40, 167, 69) !important;
 }
