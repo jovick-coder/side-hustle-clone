@@ -251,7 +251,7 @@ footer .footer-buttom-text {
     display: flex;
   }
   footer .icon-div ul {
-    margin: auto;
+    margin: 20px auto;
   }
 }
 .question-mark {
