@@ -363,6 +363,11 @@ nav .link-div ul li a {
     left: 24%;
   }
 }
+@media screen and (max-width: 3360px) {
+  .chart-holder .chart .chart-text {
+    left: 23%;
+  }
+}
 .chart-holder .chart-text2 {
   /* margin-top: 20px; */
   width: 70%;
