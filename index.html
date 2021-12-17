@@ -495,18 +495,6 @@
     </section>
 
     <section>
-      <style>
-        .chart-holder {
-          position: relative;
-          border: solid;
-        }
-        .chart {
-          /* position: absolute; */
-          top: -30px !important;
-          left: 80px !important;
-          right: 0;
-        }
-      </style>
       <div class="col-12 p-0 pt-5" data-v-c5c507e4="">
         <div class="row px-0 text-center" data-v-c5c507e4="">
           <div
@@ -567,10 +555,10 @@
             class="intern col-10 m-auto col-md-2 col-lg-3"
             data-v-c5c507e4=""
           >
-            <div class="chart-holder" data-v-c5c507e4="">
+            <!-- <div class="chart-holder" data-v-c5c507e4="">
               <img
-                src="https://internship.sidehustle.ng/img/chart.ffdcec8d.svg"
-                class="chart col-12 mb-3 float-right"
+                src="img/chart.ffdcec8d.svg"
+                class="chart col-12 mb-3 float-right w-100"
                 alt="chart"
                 data-v-c5c507e4=""
               />
@@ -592,6 +580,106 @@
               >
                 Over 90% of interns are now engaged by different start-ups
               </p>
+            </div> -->
+
+            <style>
+              /* .chart-holder {
+                position: relative;
+                border: solid;
+                width: 100%;
+              }
+              .chart-text {
+                /* position: absolute; * /
+              }
+              .chart-text2[data-v-c5c507e4] {
+                position: absolute !important;
+                top: 200px !important;
+                bottom: 10px !important;
+                left: 0;
+                text-align: center;
+                right: 0 !important;
+                width: 90%;
+                margin: auto;
+              }
+              .chart {
+                position: absolute;
+                /* top: -30px !important;
+                left: 80px !important; * /
+                right: 0;
+              } */
+              .intern {
+                line-height: 24px;
+                font-weight: 400;
+                font-size: 14px;
+              }
+              .intern small {
+                line-height: 24px;
+                font-weight: 700;
+                font-size: 14px;
+              }
+              .count {
+                color: rgb(8 56 109);
+                font-size: 40px;
+                font-weight: 700;
+                color: rgb(33 37 41);
+              }
+              .chart-holder {
+                position: relative;
+                /* border: solid; */
+                display: flex;
+                flex-direction: column;
+              }
+              .chart-holder .chart .chart-text {
+                position: absolute;
+                top: 20%;
+                left: 30%;
+              }
+              @media screen and (max-width: 767px) {
+                .intern {
+                  line-height: 24px;
+                  font-weight: 400;
+                  font-size: 14px;
+                }
+                .intern small {
+                  line-height: 24px;
+                  font-weight: 700;
+                  font-size: 14px;
+                }
+                .count {
+                  color: rgb(8 56 109);
+                  font-size: 1rem !important;
+                  font-weight: 700;
+                }
+                .chart-holder {
+                  margin: 20px 0;
+                }
+                .chart-holder .chart .chart-text {
+                  top: 18%;
+                  left: 38%;
+                }
+              }
+              .chart-holder .chart-text2 {
+                /* margin-top: 20px; */
+                width: 70%;
+                margin: 20px auto;
+              }
+              .chart-holder .chart .chart-text p {
+                font-size: 50px;
+                font-weight: 700;
+                margin: 20px 0;
+              }
+            </style>
+            <div class="chart-holder">
+              <div class="chart">
+                <img src="img/chart.ffdcec8d.svg" alt="" />
+                <div class="chart-text">
+                  <span>OVER</span>
+                  <p>90%</p>
+                </div>
+              </div>
+              <div class="chart-text2">
+                Over 90% of interns are now engaged by different start-ups
+              </div>
             </div>
           </div>
         </div>
