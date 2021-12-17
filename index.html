@@ -494,7 +494,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="m-5">
       <div class="col-12 p-0 pt-5" data-v-c5c507e4="">
         <div class="row px-0 text-center" data-v-c5c507e4="">
           <div
@@ -634,6 +634,7 @@
                 top: 20%;
                 left: 30%;
               }
+
               @media screen and (max-width: 767px) {
                 .intern {
                   line-height: 24px;
@@ -656,6 +657,11 @@
                 .chart-holder .chart .chart-text {
                   top: 18%;
                   left: 38%;
+                }
+              }
+              @media screen and (max-width: 320px) {
+                .chart-holder .chart .chart-text {
+                  left: 24%;
                 }
               }
               .chart-holder .chart-text2 {
@@ -687,62 +693,86 @@
     </section>
     <section class="footer-section">
       <footer>
-        <div>
-          <img src="img/logo-dark.64d45129.png" width="150" alt="" />
-          <br />
-          <b>Get in Touch</b>
+        <div class="flexbox space-around">
+          <div>
+            <img src="img/logo-dark.64d45129.png" width="150" alt="" />
+            <br />
+            <b>Get in Touch</b>
 
-          <ul>
-            <li>
-              <a href="#">
-                <i class="fab fa-whatsapp"></i>
-                Chat with us on Whatsapp
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-telegram"></i>
-                Chat with us on Telegram
-              </a>
-            </li>
-            <li>
-              <a href="#">hello@sidehustle.ng</a>
-            </li>
-          </ul>
-
-          <div class="icon-div">
             <ul>
-              <li><i class="fab fa-facebook-square"></i></li>
-              <li><i class="fab fa-linkedin-in"></i></li>
-              <li><i class="fab fa-twitter-square"></i></li>
-              <li><i class="fab fa-instagram"></i></li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-whatsapp"></i>
+                  Chat with us on Whatsapp
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-telegram"></i>
+                  Chat with us on Telegram
+                </a>
+              </li>
+              <li>
+                <a href="#">hello@sidehustle.ng</a>
+              </li>
+            </ul>
+
+            <div class="icon-div">
+              <ul>
+                <li><i class="fab fa-facebook-square"></i></li>
+                <li><i class="fab fa-linkedin-in"></i></li>
+                <li><i class="fab fa-twitter-square"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <b>Quick Links</b>
+            <ul>
+              <li>
+                <a href="#">Courses</a>
+              </li>
+              <li>
+                <a href="#">FAQs</a>
+              </li>
             </ul>
           </div>
-        </div>
-        <div>
-          <b>Quick Links</b>
-          <ul>
-            <li>
-              <a href="#">Courses</a>
-            </li>
-            <li>
-              <a href="#">FAQs</a>
-            </li>
-          </ul>
-        </div>
 
-        <div>
-          <b>Company</b>
-          <ul>
-            <li>About Us</li>
-            <li>Privacy Policy</li>
-          </ul>
-        </div>
+          <div>
+            <b>Company</b>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
 
-        <div>
-          <a href="#" class="footer-btn">Become an Intern</a>
+          <div>
+            <a href="#" class="footer-btn">Become an Intern</a>
+          </div>
+        </div>
+        <hr class="mt-5" />
+        <div class="footer-buttom-text">
+          © 2021 Side Hustle Internship | All Rights Reserved.
         </div>
       </footer>
+
+      <div class="question-mark">
+        <a
+          href="#"
+          class="d-block text-success mt-4 text-center"
+          id="wa"
+          style="box-shadow: none;"
+        >
+          <i class="d-block fas fa-question fa-2x" aria-hidden="true"></i>
+          <span class="d-none d-md-block">
+            Have Questions?
+            <br />
+            Read
+            <br />
+            the FAQ's
+          </span>
+        </a>
+      </div>
     </section>
 
     <script>
