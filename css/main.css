@@ -222,6 +222,158 @@ nav .link-div ul li a {
   /* border: solid; */
   margin-bottom: 0;
 }
+.testimony-text {
+  font-size: 18px;
+  width: 80%;
+  margin: 0 20px;
+}
+.testimony .row {
+  --bs-gutter-x: 0;
+}
+@media screen and (max-width: 767px) {
+  .testimony-text {
+    font-size: 14px;
+    /* color: red !important; */
+    text-align: center;
+    /* border: solid; */
+    width: 90%;
+    border-bottom: solid 1px rgb(8 56 109 / 20%);
+    /* max-width: 400px; */
+    margin: 10px auto;
+    /* margin: 30px; */
+  }
+}
+
+.name-div {
+  /* border: solid; */
+  width: 250px;
+  margin: auto;
+}
+.name-div .name span {
+  font-size: 14px;
+  color: rgb(8, 56, 109);
+  font-weight: 700;
+}
+.name-div .name small {
+  font-size: 12.8px;
+}
+.text-on-image-div {
+  position: relative;
+  /* border: solid; */
+}
+.text-on-image {
+  position: absolute;
+  margin: auto;
+  top: 25%;
+  left: 10%;
+}
+.text-on-image h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  color: #fff;
+  margin: 20px 0;
+}
+.text-on-image small {
+  font-size: 14px;
+  color: #fff;
+  padding-top: 30px;
+  display: block;
+}
+.text-on-image small span {
+  font-size: 14px;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .heading-1 {
+    font-size: 30px !important;
+  }
+  .text-on-image-div {
+    position: static;
+    background-color: rgb(8, 56, 109);
+    /* border: solid; */
+    height: 289px;
+    text-align: center;
+    width: 100% !important;
+    margin: 0;
+    /* min-width: 300px; */
+  }
+  .text-on-image {
+    position: static;
+  }
+
+  .text-on-image h1 {
+    font-size: 30px;
+  }
+}
+.intern {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.intern small {
+  line-height: 24px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.count {
+  color: rgb(8 56 109);
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(33 37 41);
+}
+.chart-holder {
+  position: relative;
+  /* border: solid; */
+  display: flex;
+  flex-direction: column;
+}
+.chart-holder .chart .chart-text {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+
+@media screen and (max-width: 767px) {
+  .intern {
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .intern small {
+    line-height: 24px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .count {
+    color: rgb(8 56 109);
+    font-size: 1rem !important;
+    font-weight: 700;
+  }
+  .chart-holder {
+    margin: 20px 0;
+  }
+  .chart-holder .chart .chart-text {
+    top: 18%;
+    left: 38%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .chart-holder .chart .chart-text {
+    left: 24%;
+  }
+}
+.chart-holder .chart-text2 {
+  /* margin-top: 20px; */
+  width: 70%;
+  margin: 20px auto;
+}
+.chart-holder .chart .chart-text p {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
 footer {
   /* display: flex;
   flex-wrap: wrap; */
@@ -279,6 +431,7 @@ footer .footer-buttom-text {
   text-decoration: none;
   font-weight: 400;
   font-size: 13px;
+  padding-bottom: 50px;
 }
 @media (max-width: 767px) {
   footer {
