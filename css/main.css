@@ -236,6 +236,24 @@ footer .footer-buttom-text {
   font-weight: 400;
   font-size: 13px;
 }
+@media (max-width: 767px) {
+  footer .flexbox {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .flexbox > * {
+    align-items: center;
+    /* border: solid; */
+    width: 100%;
+    text-align: center;
+  }
+  footer .icon-div {
+    display: flex;
+  }
+  footer .icon-div ul {
+    margin: auto;
+  }
+}
 .question-mark {
   position: fixed;
   bottom: 20%;
